@@ -9,7 +9,7 @@ This project is a set of preconfigured useful defaults that allow:
 
 ## Installation:
 - install `hygen` globally. http://www.hygen.io/
-- clone this repo, run make-install in project root.
+- clone this repo, run make install in project root.
 
 ## Main Features:
 Anywhere on your machine, type the command specified in `bin` in package.json. (`cgen` is default).
