@@ -1,8 +1,8 @@
 #  hygen.io CLI utility
 
 ## Overview
-This project is a set of preconfigured useful defaults that allow quicker:
-- use of templates and config stored in user home directory as preconfigured hygen commands in clear CLI.
+This project is a set of preconfigured useful defaults that allow:
+- quicker use of templates and config stored in user home directory as preconfigured hygen commands in clear CLI.
 - example component and structure for extending with other CLI tools for generating templates in `home`/_templates, `home`/.hygen.js)
 - Run hygen commands in home direcotry to extend with more templates and generators
 - OR use _templates for syncing submodules (!)
