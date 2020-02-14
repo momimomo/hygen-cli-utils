@@ -23,7 +23,7 @@ const COLOURS = Object.freeze({
 
 const welcomeMessage = `
 Hi! Welcome to ${VARIABLES.APP_NAME}! \n
-This Code Generator will help you generate code using common templates used in Tivix. \n
+This Code Generator will help you generate code using common templates used in your company. \n
 Before you start, please make sure that you have installed npm and hygen.io globally.
 `;
 
