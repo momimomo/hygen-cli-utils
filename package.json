@@ -6,7 +6,7 @@
 	"author": "Bartlomiej Jodlowski",
 	"license": "ISC",
 	"bin": {
-		"tivixgen": "./bin/index.js"
+		"cgen": "./bin/index.js"
 	},
 	"preferGlobal": true,
 	"scripts": {
