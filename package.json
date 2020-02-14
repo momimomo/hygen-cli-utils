@@ -1,0 +1,33 @@
+{
+	"name": "dndgen",
+	"version": "1.0.0",
+	"description": "Hygen CLI utils wrapper",
+	"main": "index.js",
+	"author": "Bartlomiej Jodlowski",
+	"license": "ISC",
+	"bin": {
+		"tivixgen": "./bin/index.js"
+	},
+	"preferGlobal": true,
+	"scripts": {
+		"build": "babel src -d bin --source-maps --copy-files",
+		"watch": "babel src -d bin --source-maps --watch"
+	},
+	"dependencies": {
+		"@babel/runtime": "^7.1.2",
+		"chalk": "^2.4.1",
+		"figlet": "^1.2.1",
+		"filehound": "^1.16.4",
+		"fs": "^0.0.1-security",
+		"inquirer": "^6.2.0",
+		"is-installed-globally": "^0.1.0",
+		"npm-check": "^5.9.0",
+		"shelljs": "^0.8.2"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.1.2",
+		"@babel/core": "^7.1.2",
+		"@babel/plugin-transform-runtime": "^7.1.0",
+		"@babel/preset-env": "^7.1.0"
+	}
+}
