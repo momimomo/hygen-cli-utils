@@ -3,7 +3,6 @@
 import { MESSAGES} from './constants';
 import { print } from './utils'
 const inquirer = require('inquirer');
-const rl = require('readline');
 const shell = require('shelljs');
 const fs = require('fs');
 const path = require('path');
@@ -59,7 +58,7 @@ const ncp = require('ncp').ncp;
         reject()
         throw err
       }
-      print({message: 'Copied /templates with success.\r'})
+      print({message: 'Copied /templates with success.'})
       resolve();
      });
   })
@@ -69,27 +68,26 @@ const ncp = require('ncp').ncp;
       shell.cd(`${process.env['HOME']}`);
 
       if(shell.cd(`${process.env['HOME']}/_templates`).code === 1) {
-        print({message: `Initializing _templates directory in ${process.env['HOME']}\r`})
+        print({message: `Initializing _templates directory in ${process.env['HOME']}`})
         shell.exec(`hygen init self`);
         shell.cd(`_templates`);
         shell.exec(`npm install inflection`);
 
         if (shell.exec(`ls -al | grep '.hygen.js'`).code === 1) {
-          print({message: `Copying .hygen.js to ${process.env['HOME']}\r`});
+          print({message: `Copying .hygen.js to ${process.env['HOME']}`});
           copyHygenCfg()
         } else {
-          print({message: `.hygen.js found in ${process.env['HOME']}\r`});
+          print({message: `.hygen.js found in ${process.env['HOME']}`});
         }
 
         copyTemplates().then(() => {
-          print({message: `Copied successfuly all templates to ${process.env['HOME']}/_templates\r`});
-          process.stdout.write('lel\r')
+          print({message: `Copied successfuly all templates to ${process.env['HOME']}/_templates`});
 
           runTemplate();
         })
 
       } else {
-        print({message: `All configs are OK!\r`});
+        print({message: `All configs are OK!`});
         runTemplate();
       }
     })
